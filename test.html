@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .search-container input[type="search"] {
+            width: 100%;
+            padding: 10px 30px;
+            /* Padding di kanan kiri untuk memberi ruang untuk ikon */
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+            outline: none;
+            /* Menghapus outline untuk tampilan lebih bersih */
+        }
+
+        .search-container .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            /* Posisi ikon di kiri */
+            transform: translateY(-50%);
+            /* Menjaga ikon berada di tengah vertikal */
+            pointer-events: none;
+            /* Membuat ikon tidak mengganggu klik pada input */
+        }
+
+        .search-container .search-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .search-container input[type="search"]:focus {
+            border-color: #007BFF;
+            /* Warna border berubah saat input fokus */
+        }
+
+        .search-container input[type="search"]::placeholder {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

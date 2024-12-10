@@ -1,5 +1,150 @@
-/* main color white */
-/* secondary color #1F4529 */
-body{
+body {
     margin: 0;
+}
+
+* {
+    font-family: "Open Sans";
+}
+
+header ul, header li, header a, header nav img {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100dvh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 225px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+nav ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+header h1, header p, header>ul {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+header>ul {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 20vh auto 2vh;
+}
+
+header p {
+    margin-block: unset;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 25px auto 5px;
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-container .search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-container input[type="search"]:focus {
+    border-color: #007BFF;
+}
+
+.search-container input[type="search"]::placeholder {
+    color: #999;
+}
+
+@media (max-width: 1024px) {
+    header h1, header p, header>ul {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
 }
